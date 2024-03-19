@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tracker</title>
+
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <div class="outer-wrap">
+            <div class="inner-wrap">
+                <section class="heading">
+                    <p class="title">Progress Tracker</p>
+                    <p class="subtitle">Aplikasi yang dapat memudahkan anda untuk memanajemen aktifitas sehari-hari, anda dapat memindahkan aktifitas sesuai status nya saat itu dengan semudah drag dan drop</p>
+                </section>
+                <section class="kanban">
+                    <div class="taskbox">
+                        <div class="title">
+                            <p>TODO</p>
+                            <span class="todo"></span>
+                        </div>
+                        <div class="cards todo" data-id="0">
+
+                        </div>
+                        <div class="hide">
+                            <p style="padding: 10px; padding-bottom: 20px; text-align: center; color: rgb(148, 148, 148); width: 285px; text-wrap: balance">
+                                Daftar TODO anda akan tampil disini, coba tambah beberapa!
+                            </p>
+                        </div>
+                        <form class="add">
+                            <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                            <button class="bi bi-plus" data-id="0" name="submit"></button>
+                        </form>
+                    </div>
+                    <div class="taskbox">
+                        <div class="title">
+                            <p>IN PROGRESS</p>
+                            <span class="pending"></span>
+                        </div>
+                        <div class="cards pending" data-id="1">
+
+                        </div>
+                        <div class="hide">
+                            <p style="padding: 10px; padding-bottom: 20px; text-align: center; color: rgb(148, 148, 148); width: 285px; text-wrap: balance">Daftar In Progress anda akan tampil disini, coba tambah beberapa!</p>
+                        </div>
+                        <form class="add">
+                            <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                            <button class="bi bi-plus" data-id="1" name="submit"></button>
+                        </form>
+                    </div>
+                    <div class="taskbox">
+                        <div class="title">
+                            <p>COMPLETED</p>
+                            <span class="completed"></span>
+                        </div>
+                        <div class="cards completed" data-id="2">
+
+                        </div>
+                        <div class="hide">
+                            <p style="padding: 10px; padding-bottom: 20px; text-align: center; color: rgb(148, 148, 148); width: 285px; text-wrap: balance">Daftar Completed anda akan tampil disini, coba tambah beberapa!</p>
+                        </div>
+                        <form class="add">
+                            <input type="text" name="task" placeholder="New Task" autocomplete="off" maxlength="30">
+                            <button class="bi bi-plus" data-id="2" name="submit"></button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
